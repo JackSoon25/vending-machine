@@ -164,3 +164,16 @@ body {
     border-radius: 0 0 50% 50%;
     top: 0;
 }
+
+/* add fade away function */
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* add fade in function */
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
