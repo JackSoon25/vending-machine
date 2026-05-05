@@ -22,4 +22,17 @@ btnDollarEl.addEventListener("click", function() {
 });
 
 // When choosing snacks, the credit is able to reflect the balance
-const itemSelected = document.querySelector(".items-section");
+const allItems = document.querySelectorAll(".item");
+allItems.forEach(function(item) {
+    // This part "sets up" a listener for every item found
+    item.addEventListener("click", function(){
+
+        // This code ONLY runs when the specific item is clicked
+        const priceText = item.querySelector(".item-price").textContent;
+        const price = parseFloat(priceText.replace("$","")).toFixed(2);
+
+        // Update credit and display credit
+        credit = credit - price;
+        amountE1.textContent = `$${credit}`;
+    });   
+});
