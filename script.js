@@ -36,3 +36,10 @@ allItems.forEach(function(item) {
         amountE1.textContent = `$${credit}`;
     });   
 });
+
+// when click "Cancel" button, credit card return to zero
+document.querySelector("#cancel").addEventListener("click", function(){
+    amountE1.textContent = '$0.00';
+})
+
+
