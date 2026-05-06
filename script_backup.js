@@ -51,11 +51,7 @@ coinBtn.forEach(function(btn){
             setTimeout(function(){
                 itemEL.classList.remove("fade-in");
                 itemEL.classList.add("fade-out");
-<<<<<<< HEAD
-
-=======
                 
->>>>>>> ae9b062d119adf8abd048a2495d3057a1780de9c
                 //Wait 1 second (duration of the fade) to swap the text back
                 setTimeout(function(){
                     itemEL.textContent = "SELECT AN ITEM";
@@ -73,11 +69,7 @@ const allItems = document.querySelectorAll(".item");
 allItems.forEach(function(item) {
     // This part "sets up" a listener for every item found
     item.addEventListener("click", function(){
-<<<<<<< HEAD
-
-=======
         
->>>>>>> ae9b062d119adf8abd048a2495d3057a1780de9c
         //get the stock number
         const stockNum = parseInt(item.querySelector(".item-stock").textContent.replace("Stock: ",""));
         selectedItemStock = stockNum;
@@ -92,11 +84,7 @@ allItems.forEach(function(item) {
             selected = 1;
             selectedItem = item;
             selectedItemPrice = price;
-<<<<<<< HEAD
-
-=======
             
->>>>>>> ae9b062d119adf8abd048a2495d3057a1780de9c
         } else {
             const itemEL = document.querySelector("#selected-item");
 
@@ -109,11 +97,7 @@ allItems.forEach(function(item) {
             setTimeout(function(){
                 itemEL.classList.remove("fade-in");
                 itemEL.classList.add("fade-out");
-<<<<<<< HEAD
-
-=======
                 
->>>>>>> ae9b062d119adf8abd048a2495d3057a1780de9c
                 //Wait 1 second (duration of the fade) to swap the text back
                 setTimeout(function(){
                     itemEL.textContent = "SELECT AN ITEM";
@@ -121,26 +105,16 @@ allItems.forEach(function(item) {
                     itemEL.classList.add("fade-in");
                 },1000);
             },2000);
-<<<<<<< HEAD
-
-        }
-    });
-=======
   
         }
     });   
->>>>>>> ae9b062d119adf8abd048a2495d3057a1780de9c
 });
 
 // when click "Cancel" button, credit card return to zero
 document.querySelector("#cancel").addEventListener("click", function(){
     amountE1.textContent = '$0.00';
     selected = 0;
-<<<<<<< HEAD
-})
-=======
     credit = 0.00;
 })
 
 
->>>>>>> ae9b062d119adf8abd048a2495d3057a1780de9c
